@@ -16,4 +16,8 @@ class Profile extends Model
         'introduction' => 'required',
         
     );
+     public function tracks()
+    {
+    return $this->hasMany('App\Track');
+    }
 }
